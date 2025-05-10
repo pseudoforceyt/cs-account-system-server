@@ -58,7 +58,8 @@ When a message is sent by the server, it is encrypted using the recipient's publ
 
 the server’s public key. This means that even if an attacker intercepts the message, they will not be able to read it without the private key. In this application, the server’s public key will change with every restart for additional security. This diagram may give you more clarity: 
 
-![image](https://github.com/user-attachments/assets/2231548d-8090-49d5-b8e4-c42f31c5cfc9)
+![image](https://github.com/user-attachments/assets/92820fbd-ae36-47f6-adcf-992a662fbeab)
+
 
 This project does not utilize SSL/TLS or other methods of encrypting the connection as it requires special ports (number 80 and 443) to be open, and additional setup such as obtaining a certificate. Most consumer-oriented Internet Service Providers (ISPs) block the users from opening these ports, to prevent misuse. The process of obtaining a certificate is also tedious. This prevents the developers with not enough resources to buy a server from a hosting service/get their own enterprise network solution, from hosting this server. Therefore, the connection is encrypted with a different method to ensure security.
 
